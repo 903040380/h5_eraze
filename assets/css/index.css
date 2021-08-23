@@ -1,0 +1,16 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'font1';
+    /* 这个名字可以自己定义 */
+    /*这里以及下面的src后面的地址填的都是自己本地的相对地址*/
+    src: url('../fonts/font.TTF') format('truetype');
+    /* Safari, Android, iOS */
+    font-weight: bold;
+    font-style: normal;
+}

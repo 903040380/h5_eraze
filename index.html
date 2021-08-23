@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+
+  <title>苏州高新区新媒体联盟倡议书</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/animate.min.css">
+
+  <style>
+    #index #bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #open {
+      position: absolute;
+      width: 35%;
+      height: 19%;
+      top: 63.5%;
+      left: 32%;
+    }
+
+    #title {
+      position: absolute;
+      width: 39%;
+      height: 13%;
+      top: 6%;
+      left: 30%;
+    }
+
+    /* #loader-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+    }
+
+    #loader {
+      margin: 20vh auto;
+      border: 16px solid #f3f3f3;
+      border-color: #00ffff #00ccff #0099ff #0066ff;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      animation: load 2s linear infinite;
+    }
+
+    @keyframes load {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    } */
+
+    #index{
+      display: block;
+    }
+    #eraze{
+      display: none;
+      font-size:0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      width: 99%;
+      height: 99.4%;
+    }
+    
+  </style>
+
+</head>
+
+<body>
+  <!-- <div id="loader-wrapper">
+    <div id='loader'></div>
+  </div> -->
+  
+  <div id="index">
+    <img id="bg" src="./assets/img/1.jpg">
+    <img id="open" class="animate__animated animate__tada animate__infinite	infinite" src="./assets/img/open.png">
+    <img id="title" class="animate__animated animate__pulse animate__infinite	infinite" src="./assets/img/title.png">
+  </div>
+  <!-- <iframe id="eraze" scrolling="no"></iframe> -->
+
+
+  <script>
+
+    // let loader_wrapper = document.getElementById('loader-wrapper');
+    // setTimeout(function () { loader_wrapper.style.display = 'none'; }, 500)
+
+
+    document.body.addEventListener('touchmove', function (e) {
+      e.preventDefault()
+    }, { passive: false })
+
+    // var count=0;
+    let button = document.getElementById('open')
+    button.addEventListener('click', function () {
+      // if(count===0){
+      //   document.getElementById('index').style.display='none';
+      //   document.getElementById('eraze').src="https://www.szjrtt.net/h5/eraze.html"
+      //   document.getElementById('eraze').style.display='block';
+        
+      //   count=1;
+      // }
+      window.location.href='eraze.html'
+    })
+
+
+  </script>
+</body>
+
+</html>
